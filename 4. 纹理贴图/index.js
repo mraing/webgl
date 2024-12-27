@@ -2,7 +2,7 @@
  * @Author: 绪锋
  * @Date: 2024-12-27 10:27:01
  * @LastEditors: 绪锋
- * @LastEditTime: 2024-12-27 16:18:24
+ * @LastEditTime: 2024-12-27 20:35:40
  * @FilePath: \webgl\4. 纹理贴图\index.js
  * @Description: 
  */
@@ -55,7 +55,9 @@ const renderer = new THREE.WebGLRenderer({
     //抗锯齿
     antialias: true,
     // 设置物理像素比，避免绘制模糊
-    devicePixelRatio: window.devicePixelRatio
+    devicePixelRatio: window.devicePixelRatio,
+    // 设置背景透明度
+    alpha: true
 });
 renderer.setSize(width, height);
 
